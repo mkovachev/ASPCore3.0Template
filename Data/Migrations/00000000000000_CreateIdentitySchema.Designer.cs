@@ -4,10 +4,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using System;
+using Template.Data;
 
-namespace Data.Migrations
+namespace Template.Data.Migrations
 {
-    [DbContext(typeof(OnlineShopDbContext))]
+    [DbContext(typeof(TemplateDbContext))]
     [Migration("00000000000000_CreateIdentitySchema")]
     partial class CreateIdentitySchema
     {

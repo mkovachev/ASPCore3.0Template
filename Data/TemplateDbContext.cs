@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Data
+namespace Template.Data
 {
-    public class OnlineShopDbContext : IdentityDbContext
+    public class TemplateDbContext : IdentityDbContext
     {
-        public OnlineShopDbContext(DbContextOptions<OnlineShopDbContext> options)
+        public TemplateDbContext(DbContextOptions<TemplateDbContext> options)
             : base(options)
         {
         }

@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System;
 
-namespace Data.Migrations
+namespace Template.Data.Migrations
 {
-    [DbContext(typeof(OnlineShopDbContext))]
+    [DbContext(typeof(TemplateDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

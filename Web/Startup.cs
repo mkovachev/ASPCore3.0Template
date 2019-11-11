@@ -1,13 +1,13 @@
-using Data;
+using Template.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using OnlineShop.Web.Infrastructure;
+using Template.Web.Infrastructure;
 
-namespace Web
+namespace Template.Web
 {
     public class Startup
     {
@@ -17,13 +17,13 @@ namespace Web
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<OnlineShopDbContext>(options =>
+            services.AddDbContext<TemplateDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetDefaultConnectionString()));
 
             services.AddDefaultIdentity<IdentityUser>(options =>
                 options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<OnlineShopDbContext>();
+                .AddEntityFrameworkStores<TemplateDbContext>();
 
             services.AddControllersWithViews();
             services.AddRazorPages();

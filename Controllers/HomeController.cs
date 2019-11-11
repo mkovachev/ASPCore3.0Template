@@ -1,8 +1,8 @@
-﻿using Controllers.Models;
+﻿using Template.Controllers.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace Controllers
+namespace Template.Controllers
 {
     public class HomeController : Controller
     {

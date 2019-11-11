@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace OnlineShop.Web.Infrastructure
+namespace Template.Web.Infrastructure
 {
     public static class ConfigurationExtensions
     {

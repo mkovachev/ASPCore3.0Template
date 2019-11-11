@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace OnlineShop.Web.Infrastructure
+namespace Template.Web.Infrastructure
 {
     public static class ApplicationBuilderExtensions
     {
