@@ -31,6 +31,5 @@ namespace Template.Web.Infrastructure
                             pattern: "{controller=Home}/{action=Index}/{id?}");
                         endpoints.MapRazorPages();
                     });
-
     }
 }
